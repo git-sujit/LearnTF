@@ -10,7 +10,7 @@ ip = tf.placeholder(tf.float32)
 linear_model = weight * ip + bias
 init = tf.global_variables_initializer()
 
-sess = tf.Session();
+sess = tf.Session()
 sess.run(init)
 
 print(sess.run(linear_model, {ip: [1, 2, 3, 4]}))
